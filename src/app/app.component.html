@@ -1,0 +1,57 @@
+
+ <div class="body">
+  <h1>{{title}}</h1>
+    
+    <div class = "calculadora" >
+      <input class=" display" type="text" [(ngModel)]="dato"><br><br>
+      <div class="botones">
+        <button (click)="boton('7')">7</button>
+        <button (click)="boton('8')">8</button>
+        <button (click)="boton('9')">9</button>
+        <button value="dividir" (click)="boton('/')">/</button>
+        <button (click)="boton('4')">4</button>
+        <button (click)="boton('5')">5</button>
+        <button (click)="boton('6')">6</button>
+        <button value="multiplicar" (click)="boton('*')">*</button>
+        <button (click)="boton('1')">1</button>
+        <button (click)="boton('2')">2</button>
+        <button (click)="boton('3')">3</button>
+        <button value="restar" (click)="boton('-')">-</button>
+        <button (click)="boton('0')">0</button>
+        <button (click)="borrar()">C</button>
+        <button (click)="total()">=</button>
+        <button value="sumar" (click)="boton('+')">+</button>
+      </div>
+      
+    <!--
+      <form>
+        Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"><br><br>
+        Numero 1: <input type="number" [(ngModel)]="numero2" name="numero2"><br><br>
+      
+        <input type="submit" value="sumar" (click)="sumar()" class="btn btn-succes">
+        <input type="submit" value="restar" (click)="restar()" class="btn btn-success">
+        <input type="submit" value="multiplicar" (click)="multiplicar()" class="btn btn-success">
+        <input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary btn-block">
+      </form>
+    -->  
+    </div>
+    
+    <!--<p>Resultado: {{resultado}}</p>  
+    -->
+ </div>   
+    
+
+
+<!-- Esto es la calculadora del video  la estructura que proporciono 
+ <h1>{{title}}</h1>
+      <form>
+        Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"><br><br>
+        Numero 1: <input type="number" [(ngModel)]="numero2" name="numero2"><br><br>
+      
+        <input type="submit" value="sumar" (click)="sumar()" class="btn btn-succes">
+        <input type="submit" value="restar" (click)="restar()" class="btn btn-success">
+        <input type="submit" value="multiplicar" (click)="multiplicar()" class="btn btn-success">
+        <input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary btn-block">
+      </form>
+<p>Resultado: {{resultado}}</p>  
+-->
